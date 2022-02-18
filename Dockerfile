@@ -7,7 +7,7 @@ ARG SALESFORCE_CLI_VERSION=latest-rc
 RUN apk add --update --no-cache git openssh ca-certificates openssl
 RUN apk add --no-cache bash
 RUN apk add --no-cache curl vim
-RUN apk add --update nodejs npm
+RUN apk add --update nodejs npm jq
 
 # Set XDG environment variables explicitly so that GitHub Actions does not apply
 # default paths that do not point to the plugins directory
