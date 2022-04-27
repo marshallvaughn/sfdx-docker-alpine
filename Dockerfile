@@ -20,6 +20,9 @@ RUN export XDG_DATA_HOME && \
   export XDG_CONFIG_HOME && \
   export XDG_CACHE_HOME
 
+# Install yarn
+RUN npm install --global yarn --ignore-scripts
+
 # Install sfdx
 RUN npm install --global sfdx-cli@${SALESFORCE_CLI_VERSION} --ignore-scripts
 
